@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      page des réclamation
+    </ion-title>
+    <ion-icon name="notifications-outline" slot="end"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Citoyen Information</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Nom:</ion-label>
+        <ion-text>{{user.name}}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-label>Email:</ion-label>
+        <ion-text>{{user.email}}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-label>type de réclamation:</ion-label>
+        <ion-text>{{user.rec}}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-label>Position:</ion-label>
+        <ion-text>{{user.position}}</ion-text>
+      </ion-item>
+      <capacitor-google-map #map></capacitor-google-map>
+    <button (click)="showMap()"></button>
+    </ion-card-content>
+    <ion-item>
+      <ion-label>confirmation par message<ion-input placeholder="Enter message"></ion-input></ion-label>
+      
+      <ion-icon name="send" slot="end"></ion-icon>
+    </ion-item>
+    
+  </ion-card>
+</ion-content>

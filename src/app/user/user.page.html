@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Réclamation page
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <capacitor-google-map #map></capacitor-google-map>
+  <button (click)="showMap()"></button>
+  <ion-card>
+    <ion-card-header>
+  <ion-grid>
+    <ion-label>Exemple de Suggestions</ion-label>
+    <ion-row>
+      <ion-col *ngFor="let rec of recs">
+        <ion-button shape="round" fill="outline" (click)="selectRec(rec)">{{ rec }}</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-item>
+    <ion-label position="stacked">Sélectionnez votre type de réclamation </ion-label>
+    <ion-label position="stacked">Ou bien écrire leur situation</ion-label>
+    <ion-input [value]="selectedRec"></ion-input>
+    <ion-icon name="send" slot="end"></ion-icon>
+
+  </ion-item>
+</ion-card-header>
+</ion-card>
+</ion-content>

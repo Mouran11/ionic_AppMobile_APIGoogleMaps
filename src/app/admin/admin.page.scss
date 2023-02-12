@@ -1,0 +1,16 @@
+capacitor-google-map {
+  display: inline-block;
+  width: 100%;
+  height: 285px;
+}
+
+@media (max-width: 767px) {
+  .capacitor-google-map {
+    height: 300px;
+  }
+}
+
+ion-icon[name="notifications-outline"] {
+  font-size: 30px;
+  color: red;
+}

@@ -1,0 +1,45 @@
+
+.center-button {
+    display: block;
+    margin: 20 auto;
+  }
+
+  ion-content.background{
+    --background: url(https://img.freepik.com/premium-vector/isometric-police-officer-uniform-police-car-vector-illustration-isolated-white-background-police-officer-emergency-service-car-driving-street_589019-1860.jpg?w=996);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    ion-content.background {
+      background-size: contain;
+    }
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    padding: 60px;
+  }
+  
+  
+  
+  @media only screen and (min-width: 768px) {
+    .btn {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    
+  
+  }
+  
